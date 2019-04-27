@@ -45,10 +45,13 @@ client.on('message', msg => {
             {
                 embed: {
                     color: 0xff0703,
-                    title: `Music Help
-              ${PREFIX}music | <fonctions>
+                    title: `Help
               Toute les functions:`,
                     fields: [{
+                        name: `${PREFIX}music | <fonctions>`,
+                        value: "Voici toutes les fonctions de la musique"
+                    },
+		    {
                         name: "Play",
                         value: `play <url> ou <recherche> : 
                             Ajouter le(s) musiques ou la playlist a la file d'attente . PS: si vous mettez une playlist attendez un peux le temps que la playlist charge`,
