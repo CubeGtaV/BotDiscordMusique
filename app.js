@@ -103,7 +103,12 @@ client.on('message', msg => {
                         name: "Stop",
                         value: `stop : Quitte le salon vocal et stoppe la musique.`,
                         inline: true
-                    }
+                    },
+		     {
+                            name: "Radio",
+                            value: `Faite ${PREFIX}radio pour afficher les radio disponible`,
+                            inline: true
+                        }
                     ],
                     timestamp: new Date(),
                     footer: {
