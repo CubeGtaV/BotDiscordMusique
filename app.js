@@ -14,6 +14,8 @@ const radio = {
 
 var PREFIX = process.env.PREFIX;
 
+var COLOR = process.env.COLOR;
+
 const client = new Client({ disableEveryone: true });
 
 const youtube = new YouTube(process.env.YT_API);
@@ -44,7 +46,7 @@ client.on('message', msg => {
         msg.channel.send(
             {
                 embed: {
-                    color: 0xff0703,
+                    color: COLOR,
                     title: `Help
               Toute les functions:`,
                     fields: [{
@@ -298,7 +300,7 @@ Veuillez fournir une valeur pour sélectionner l'un des resultats de la recherch
                     msg.channel.send(
                         {
                             embed: {
-                                color: 0xBCFF78,
+                                color: COLOR,
                                 title: `📻 En joue:`,
                                 fields: [{
                                     name: `• Radio`,
