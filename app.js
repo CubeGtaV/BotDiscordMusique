@@ -45,7 +45,7 @@ client.on('message', msg => {
         msg.channel.send(
             {
                 embed: {
-                    color: process.env.COLOR,
+                    color: 0xff0703,
                     title: `Help
               Toute les functions:`,
                     fields: [{
@@ -299,7 +299,7 @@ Veuillez fournir une valeur pour sélectionner l'un des resultats de la recherch
                     msg.channel.send(
                         {
                             embed: {
-                                color: process.env.COLOR,
+                                color: 0xff0703,
                                 title: `📻 En joue:`,
                                 fields: [{
                                     name: `• Radio`,
